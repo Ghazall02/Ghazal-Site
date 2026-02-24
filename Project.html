@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- skip link gives keyboard users a way to bypass navigation -->
+    <a href="#main-content" class="skip-link" tabindex="0">Skip to main content</a>
+    <header role="banner">
+        <h1>Projects</h1>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav role="navigation" aria-label="Main navigation" id="nav-menu" class="nav-menu">
+            <ul>
+                <li><a href="Ghazal.html">Home</a></li>
+                <li><a href="project.html" class="active">Projects</a></li>
+                <li><a href="Ghazal.html#about-me">About</a></li>
+                <li><a href="Ghazal.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Back button -->
+    <div class="back-container">
+        <a href="Ghazal.html" class="back-btn">
+            <span class="back-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+            </span>
+            <span class="back-text">Back to Ghazal</span>
+        </a>
+    </div>
+
+    <main id="main-content" role="main">
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="filter-container">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="poetry">Poetry</button>
+                <button class="filter-btn" data-category="literature">Literature</button>
+                <button class="filter-btn" data-category="analysis">Analysis</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="poetry">
+                    <h3>Classic Ghazals Collection</h3>
+                    <p>A curated collection of traditional ghazals exploring themes of love and longing.</p>
+                    <span class="project-category">Poetry</span>
+                </div>
+                <div class="project-card" data-category="literature">
+                    <h3>Persian Poetry Translation</h3>
+                    <p>Translating classic Persian poems into English while preserving poetic essence.</p>
+                    <span class="project-category">Literature</span>
+                </div>
+                <div class="project-card" data-category="analysis">
+                    <h3>Ghazal Form Analysis</h3>
+                    <p>In-depth study of ghazal structure, meter, and rhetorical devices.</p>
+                    <span class="project-category">Analysis</span>
+                </div>
+                <div class="project-card" data-category="poetry">
+                    <h3>Modern Ghazals</h3>
+                    <p>Contemporary interpretations of the ghazal form for modern audiences.</p>
+                    <span class="project-category">Poetry</span>
+                </div>
+                <div class="project-card" data-category="literature">
+                    <h3>Urdu Ghazal Study</h3>
+                    <p>Exploring the rich tradition of Urdu ghazal poetry and its masters.</p>
+                    <span class="project-category">Literature</span>
+                </div>
+                <div class="project-card" data-category="analysis">
+                    <h3>Rhythm & Meter Research</h3>
+                    <p>Academic research on the musicality of classical ghazal forms.</p>
+                    <span class="project-category">Analysis</span>
+                </div>
+            </div>
+        </section>
+</body>   
+<script src="script.js"></script>        
+</html>

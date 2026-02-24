@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghazal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ 
+    <!-- skip link gives keyboard users a way to bypass navigation -->
+    <a href="#main-content" class="skip-link" tabindex="0">Skip to main content</a>
+    <header role="banner">
+        <div class="Title"><h1>Ghazal</h1></div>
+        <div class="nav-bar">
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav role="navigation" aria-label="Main navigation" id="nav-menu" class="nav-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="#about-me">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main-content" role="main">
+
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>Hi, I'm Mohammad Ghazal, a Network Engineering and Cybersecurity graduate based in Jordan. I currently work as a System Development Engineer at SEDCO, where I focus on backend development, API integrations, and enterprise system implementations. I have a strong passion for cybersecurity, network infrastructure, and secure software development.</p>
+            
+            <h3>Skills</h3>
+            <ul>
+                <li>Network Engineering (CCNA Certified)</li>
+                <li>Cybersecurity (CompTIA Security+)</li>
+                <li>C# and .NET Backend Development</li>
+                <li>RESTful & SOAP API Integration</li>
+                <li>Linux & Windows Systems Administration</li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Virtualization (Hyper-V)</li>
+            </ul>
+
+            <section>
+                <p>I work at SEDCO as a System Development Engineer, where I build and integrate backend services, handle XML-based requests, implement secure API communications, and contribute to enterprise-level system solutions.</p>
+            </section>
+
+            <section>
+                <p>I am continuously improving my skills in cybersecurity, system architecture, and modern frontend technologies such as React. My goal is to grow into a highly skilled security-focused system engineer capable of designing secure, scalable, and efficient infrastructure solutions.</p>
+            </section>
+        </section>
+        
+        <section class="cta-section">
+           <a href="project.html" class="btn btn-primary">
+               <span class="btn-text">Go to Projects</span>
+               <span class="btn-icon">
+                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                       <line x1="5" y1="12" x2="19" y2="12"></line>
+                       <polyline points="12 5 19 12 12 19"></polyline>
+                   </svg>
+               </span>
+           </a>
+        </section>
+    </main>
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2026 Mohammad Ghazal | System Development Engineer</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
